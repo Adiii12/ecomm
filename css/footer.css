@@ -1,0 +1,78 @@
+/*-------------------- Footer section start----------------- */
+.footer-section {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+.footer-section .row {
+  display: flex;
+}
+.footer-section .logo,
+.footer-section .quick-link,
+.footer-section .new-product,
+.footer-section .support {
+  width: 25%;
+}
+
+.footer-section .quick-link h1,
+.footer-section .new-product h1,
+.footer-section .support h1 {
+  font-size: 25px;
+  line-height: 24px;
+  font-weight: 500;
+}
+.footer-section .logo h1 {
+  font-size: 50px;
+  line-height: 24px;
+  font-weight: 600;
+}
+.footer-section .logo p {
+  font-size: 20px;
+  margin-top: 15px;
+  line-height: 29px;
+  color: #868c98;
+}
+.footer-section .quick-link a,
+.footer-section .new-product a,
+.footer-section .support a {
+  text-decoration: none;
+  display: block;
+  color: #868c98;
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 29px;
+  transition: 0.3s;
+}
+.footer-section .quick-link a:hover,
+.footer-section .new-product a:hover,
+.footer-section .support a:hover {
+  padding-left: 10px;
+  color: #ff003c;
+}
+
+/*-------------------- copy right section  start------------------------*/
+.copy-right {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 100px;
+}
+.copy-right .left {
+  display: flex;
+  align-items: center;
+  width: 70%;
+}
+.copy-right .right {
+  width: 30%;
+  text-align: right;
+}
+.copy-right .right .fab {
+  margin: 0px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #313639;
+  padding: 15px;
+  border: 2px solid #c7c5c5;
+}
+/*--------- copy right section  end----------*/
+/*-------------------- Footer section end----------------- */

@@ -1,0 +1,611 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+/*-------------------- Hero section start----------------- */
+.hero-section {
+  margin-bottom: 150px;
+  background-color: #c7ecff;
+}
+.hero-section .row {
+  display: flex;
+}
+.hero-section .left {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+}
+.hero-section .left img {
+  height: 750px;
+}
+.hero-section .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 50%;
+}
+.hero-section .right p {
+  font-family: Yellowtail, cursive;
+  font-size: 40px;
+  line-height: 60px;
+  color: #2577fd;
+}
+.hero-section .right h1 {
+  font-size: 100px;
+  color: #1f2022;
+  line-height: 110px;
+  font-family: "Playfair Display", serif;
+}
+.hero-section .right .mute-text {
+  font-family: "Playfair Display", serif;
+  font-size: 20px;
+  color: #313639;
+  line-height: 35px;
+  font-weight: 300;
+}
+.hero-section .right .hero-btn {
+  font-size: 18px;
+  color: #fff;
+  background-color: #ff003c;
+  padding: 10px 30px;
+  border-radius: 35px;
+  box-shadow: none;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #ff003c;
+  margin-top: 30px;
+}
+
+/*-------------------- Hero section end----------------- */
+
+/*-------------------- Category section start----------------- */
+.category h1 {
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 50px;
+}
+.category {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.category .row {
+  display: flex;
+  justify-content: space-between;
+}
+.category .right,
+.category .left,
+.category .center {
+  position: relative;
+  width: 32%;
+}
+.category .left img,
+.category .center img,
+.category .right img {
+  width: 100%;
+  border-radius: 10px;
+}
+.category .category-caption {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translate(-2%, -50%);
+}
+.category .right .category-caption p,
+.category .left .category-caption p {
+  font-size: 20px;
+  margin: 10px 10px;
+  font-family: "Yesteryear", cursive;
+  line-height: 29px;
+  color: #1f1f1f;
+}
+.category .category-caption .category-btn {
+  text-decoration: none;
+  background-color: #ff003c;
+  padding: 10px 0px;
+  text-align: center;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 16px;
+}
+.category .category-caption .category-collection {
+  color: #2577fd;
+  font-size: 23px;
+  line-height: 25px;
+  font-weight: 600;
+  font-family: Yellowtail, cursive;
+  margin-top: -10px;
+}
+
+/*-------------------- Category section end----------------- */
+
+/*-------------------- Latest Product section start----------------- */
+.latest-product {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.latest-product .latest-product-top {
+  display: flex;
+  align-items: center;
+  padding-bottom: 25px;
+  justify-content: space-between;
+  border-bottom: 1px solid #e8e8e8;
+}
+.latest-product .left {
+  padding: 10px;
+  flex: 70%;
+}
+.latest-product .left h1 {
+  font-size: 40px;
+  line-height: 24px;
+}
+.latest-product .right {
+  padding: 10px;
+  flex: 30%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.latest-product .right p {
+  cursor: pointer;
+}
+.latest-product .right p:hover {
+  color: #ff003c;
+}
+.latest-product .latest-product-card {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.latest-product .latest-product-card .column {
+  flex: 30%;
+  max-width: 30%;
+  margin: 15px 0px;
+}
+.card img {
+  width: 100%;
+}
+.card {
+  transition: 0.3s;
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+}
+.card-caption {
+  text-align: center;
+  padding: 15px 16px;
+}
+.card-caption .fa-star,
+.fa-star-half-alt {
+  margin: 15px 0px;
+  color: #f7d800;
+}
+.card-caption h4 {
+  margin-bottom: 15px;
+}
+/*-------------------- Latest Product section end----------------- */
+
+/*-------------------- Best Product section start----------------- */
+.best-product {
+  margin-bottom: 150px;
+  width: 90%;
+  margin: auto;
+  background-color: #fff7d8;
+  margin-bottom: 150px;
+}
+.best-product .row {
+  display: flex;
+}
+.best-product .left {
+  width: 30%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.best-product .left img {
+  height: 600px;
+}
+.best-product .right {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.best-product .right h1 {
+  align-self: center;
+  font-size: 65px;
+  line-height: 72px;
+  font-weight: 700px;
+  font-family: "Playfair Display", serif;
+}
+.best-product .right p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #373b41;
+  margin: 20px 0px 10px 0px;
+}
+.best-product .right .best-product-text {
+  display: grid;
+  width: 100%;
+}
+.best-product .right .best-product-btn {
+  width: 200px;
+  text-align: center;
+  background-color: #ff003c;
+  outline: none;
+  box-shadow: none;
+  margin: 20px 0px;
+  border: 2px solid #ff003c;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 30px;
+}
+/*-------------------- Best Product section end----------------- */
+/*-------------------- best-month-collection section start----------------- */
+.best-month-collection {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.best-month-collection .row {
+  display: flex;
+  justify-content: space-between;
+}
+.best-month-collection .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+.best-month-collection .left h1 {
+  font-size: 50px;
+  line-height: 70px;
+  font-weight: 700;
+}
+.best-month-collection .left p {
+  font-size: 20px;
+  line-height: 30px;
+  color: #373b41;
+  margin: 35px 0px;
+}
+.best-month-collection .left .best-month-collection-btn {
+  padding: 10px 25px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 23px;
+  border-radius: 30px;
+  background-color: #ff003c;
+  margin: 80px 0px;
+  text-decoration: none;
+}
+.best-month-collection .center {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+.best-month-collection .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+.best-month-collection .right .right-section1 {
+  display: flex;
+  padding: 40px 0px;
+  justify-content: center;
+  width: 100%;
+  text-align: right;
+}
+.best-month-collection .right .right-section1 h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.best-month-collection .right .right-section2 {
+  margin: 15px 0px;
+  display: flex;
+  padding: 40px 0px;
+  justify-content: center;
+  width: 100%;
+  text-align: right;
+}
+.best-month-collection .right .right-section2 h4 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+  padding: 20px 15px;
+  background-color: #2577fd;
+  border-radius: 15px;
+}
+.best-month-collection .right .right-section3 {
+  display: flex;
+  padding: 40px 0px;
+  justify-content: center;
+  width: 100%;
+  text-align: right;
+}
+.best-month-collection .right .right-section3 h4 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+/*-------------------- best-month-collection section end----------------- */
+
+/*-------------------- Latest Offer News section start----------------- */
+.latest-offer-news {
+  width: 90%;
+  margin: auto;
+  background-color: #ddf2ff;
+  margin-bottom: 150px;
+}
+.latest-offer-news .row {
+  display: flex;
+  padding: 100px 0px;
+}
+.latest-offer-news .left {
+  padding: 0px 0px 0px 100px;
+  width: 50%;
+  text-align: left;
+}
+.latest-offer-news .left h1 {
+  font-size: 55px;
+  line-height: 72px;
+}
+.latest-offer-news .left p {
+  font-size: 23px;
+  line-height: 30px;
+  color: #373b41;
+}
+.latest-offer-news .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.latest-offer-news .right input {
+  padding: 15px 10px;
+  border-radius: 30px;
+  width: 300px;
+  outline: none;
+  box-shadow: none;
+  border: 2px solid #ff003c;
+}
+.latest-offer-news .right .fa-search {
+  margin-left: -30px;
+  cursor: pointer;
+}
+/*-------------------- Latest Offer News section end----------------- */
+
+/*-------------------- Policy section start----------------- */
+
+.policy {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.policy .row {
+  display: flex;
+}
+.policy .fas {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.policy h2 {
+  font-size: 23px;
+  line-height: 39px;
+  font-weight: 700;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 10px;
+}
+.policy p {
+  font-size: 17px;
+  line-height: 25px;
+}
+.policy .left {
+  width: 33%;
+}
+.policy .center {
+  width: 33%;
+}
+.policy .right {
+  width: 33%;
+}
+
+/*-------------------- Policy section end----------------- */
+
+/*------------------ image gallery section start------------------ */
+.image-gallery {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 150px;
+}
+.image-gallery .rwo {
+  display: flex;
+}
+.image-gallery .column {
+  display: flex;
+  width: 25%;
+}
+.image-gallery .column img {
+  width: 100%;
+}
+/*------------------ image gallery section end------------------ */
+
+
+
+
+
+/*--------------------------- media query start  ----------------------------*/
+@media (max-width: 969px) {
+
+  /*-------------------- top header section----------------- */
+  .top-header .right {
+    width: 50%;
+  }
+  /*-------------------- top header section end----------------- */
+
+  /*-------------------- main header section start----------------- */
+  .main-header-section .center {
+    width: 50%;
+  }
+  .main-header-section .right {
+    display: flex;
+    width: 20%;
+  }
+  .main-header-section .center a:hover {
+    color: #ff003c;
+  }
+  .main-header-section .right .search-product {
+    display: none;
+  }
+  .main-header-section .right .cart {
+    display: none;
+  }
+  /*-------------------- main header section end----------------- */
+
+
+
+  /*-------------------- Hero section start----------------- */
+  .hero-section .row {
+    display: flex;
+  }
+  .hero-section .left {
+    flex: 30%;
+    display: flex;
+    justify-content: center;
+  }
+  .hero-section .left img {
+    height: 500px;
+  }
+  .hero-section .right {
+    flex: 70%;
+  }
+  .hero-section .right p {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .hero-section .right h1 {
+    font-size: 70px;
+    line-height: 80px;
+  }
+  .hero-section .right .mute-text {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 200;
+  }
+  .hero-section .right .hero-btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 25px;
+  }
+
+  /*-------------------- Hero section end----------------- */
+
+
+  /*-------------------- Category section start----------------- */
+  .category .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .category .right,
+  .category .left,
+  .category .center {
+    margin: 5px 0px;
+    width: 49%;
+  }
+  .category .right .category-caption p,
+  .category .left .category-caption p {
+    font-size: 20px;
+    margin: 5px 5px;
+    line-height: 23px;
+  }
+
+  /*-------------------- Category section end----------------- */
+}
+
+@media (max-width: 769px) {
+
+  /*-------------------- Hero section start----------------- */
+  .hero-section .row {
+    display: flex;
+    padding: 100px 0px;
+  }
+  .hero-section .left {
+    flex: 0%;
+  }
+  .hero-section .left img {
+    display: none;
+  }
+  .hero-section .right {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    text-align: left;
+    flex: 100%;
+  }
+  .hero-section .right p {
+    font-size: 40px;
+    line-height: 60px;
+    color: #2577fd;
+  }
+  .hero-section .right h1 {
+    font-size: 100px;
+    line-height: 110px;
+  }
+  .hero-section .right .mute-text {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 300;
+  }
+  .hero-section .right .hero-btn {
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 35px;
+    margin-top: 30px;
+  }
+
+  /*-------------------- Hero section end----------------- */
+
+  
+  /*-------------------- Category section start----------------- */
+  .category .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .category .right,
+  .category .left,
+  .category .center {
+    margin: 5px 0px;
+    width: 100%;
+  }
+  .category .right .category-caption p,
+  .category .left .category-caption p {
+    font-size: 20px;
+    margin: 5px 5px;
+    line-height: 23px;
+  }
+
+  /*-------------------- Category section end----------------- */
+}
+/*--------------------------- media query end  ----------------------------*/
